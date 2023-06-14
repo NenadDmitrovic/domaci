@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="askMe">Ask me something</button>
+
+
+    <script>
+        var pitanja = [
+            "Koliko je 2+2",
+            "Glavni grad Srbije?",
+            "Najveca reka na svetu"
+        ]
+        document.getElementById("askMe").addEventListener('click', function(){
+            var nasumicanBroj = Math.floor( Math.random() * 3);
+
+            var odgovor = prompt(pitanja[nasumicanBroj]);
+            odgovor = odgovor.toLowerCase();
+
+            if(odgovor === "4") {
+                console.log("Tacan odgovor");
+            } else if(odgovor == "beograd") {
+                console.log("Tacan odgovor");
+            } else if (odgovor == "nil") {
+                console.log("Tacan odgovor");
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
